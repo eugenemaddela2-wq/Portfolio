@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <title>Eugene Maddela — IT & Cybersecurity Portfolio</title>
+    <meta name="description" content="Information Technology student major in networking, cybersecurity enthusiast, and project showcase." />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div id="loader" class="loader"><div class="loader-text"><span class="loader-dot"></span>LOADING PORTFOLIO<span class="cursor-blink"></span></div></div>
+    <div id="error-screen" class="error-screen hidden"><div class="error-title">CONNECTION_FAILED</div><div id="error-msg" class="error-msg"></div></div>
+
+    <div id="app" class="hidden">
+      <header id="navbar" class="site-header">
+        <a href="#top" class="brand"><span class="brand-kicker">CYBERSECURITY</span><span class="brand-name">IT &amp; NETWORKING</span></a>
+        <nav class="desktop-nav" id="nav-links">
+          <a href="#top">HOME</a><a href="#projects">PROJECTS</a><a href="#about">EDUCATION &amp; SKILLS</a><a href="#certs">CERTIFICATIONS</a><a href="#connect">CONTACT</a>
+        </nav>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu"><i data-icon="menu" class="menu-open-icon"></i><i data-icon="x" class="menu-close-icon hidden"></i></button>
+        <div id="mobile-menu" class="mobile-menu hidden"><a href="#top">HOME</a><a href="#projects">PROJECTS</a><a href="#about">EDUCATION &amp; SKILLS</a><a href="#certs">CERTIFICATIONS</a><a href="#connect">CONTACT</a></div>
+      </header>
+
+      <main>
+        <section id="top" class="hero-editorial">
+          <div class="hero-word">OFFENSIVE</div>
+          <div class="hero-copy">
+            <p class="eyebrow">IT STUDENT <span>/</span> SECURITY RESEARCHER</p>
+            <p class="hello">Hello, I'm</p>
+            <h1 id="hero-name-text" class="hero-name">Alex<br /><span>Carter</span></h1>
+            <p id="hero-title-text" class="hero-role">RED TEAM &amp; BUG BOUNTY<br />ENTHUSIAST</p>
+            <p id="hero-bio" class="hero-bio"></p>
+            <a href="#connect" class="red-link">LET'S CONNECT <span>↗</span></a>
+          </div>
+          <div class="hero-portrait-wrap">
+            <div class="portrait-frame"><img src="/src/scientist.png" alt="Blue-hooded masked character holding a glowing flask" class="portrait-image" /></div>
+          </div>
+          <div class="hero-stats">
+            <div><strong>04</strong><span>YEAR<br />IT STUDENT</span></div>
+            <div><strong>SEC</strong><span>CYBERSECURITY<br />INTEREST</span></div>
+            <div><strong>NET</strong><span>NETWORKING<br />FOCUS</span></div>
+          </div>
+          <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+        </section>
+
+        <section id="projects" class="editorial-section projects-vault">
+          <div class="section-topline"><h2>PROJECT <span>VAULT</span></h2><span class="section-rule"></span><span class="section-note">SELECTED WORK</span></div>
+          <div id="vault-grid" class="vault-grid"></div>
+        </section>
+
+        <section id="about" class="editorial-section profile-section">
+          <div class="profile-column">
+            <div class="section-title-small">EDUCATION <span>&amp; SKILLS</span></div>
+            <div class="education-item"><span class="red-label">EDUCATION</span><h3>Information Technology</h3><p>Fourth-Year Information Technology Student</p></div>
+            <div class="education-item"><h3>Cybersecurity &amp; Networking</h3><p>Labs, CTFs &amp; independent research / Ongoing</p></div>
+            <div class="skills-block"><span class="red-label">SKILLS</span><div class="skill-tags" id="skill-tags"></div></div>
+          </div>
+          <aside class="quote-panel"><span class="quote-mark">"</span><blockquote>Security is not just about breaking things. It's about understanding how to build them better.</blockquote><cite>— EUGENE MADDELA</cite><a href="#connect">LET'S CREATE SOMETHING SECURE <span>✦</span></a></aside>
+        </section>
+
+        <section id="certs" class="certs-section editorial-section">
+          <div class="section-topline"><h2>VERIFIED <span>CREDENTIALS</span></h2><span class="section-rule"></span><a href="#connect">VERIFY MY WORK <b>↗</b></a></div>
+          <div class="certs-grid" id="certs-grid"></div>
+        </section>
+
+        <section id="connect" class="contact-section editorial-section">
+          <div class="contact-copy"><p class="eyebrow">LET'S CONNECT</p><h2>LET'S WORK<br /><span>TOGETHER</span><b>✦</b></h2><p>I'm building practical skills across networking, cybersecurity, systems, and software development.</p><a href="#email-card" class="red-link">CONTACT DETAILS <span>→</span></a></div>
+          <div class="contact-details" id="email-card"></div>
+          <div class="contact-image" aria-label="Abstract security workstation"></div>
+        </section>
+      </main>
+
+      <footer class="footer"><div class="footer-brand">EUGENE MADDELA <span>/</span> IT &amp; SECURITY</div><div id="footer-copy"></div><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+    </div>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
