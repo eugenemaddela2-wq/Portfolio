@@ -63,3 +63,47 @@ button { font: inherit; }
 }
 
 a:focus-visible, button:focus-visible { outline: 2px solid var(--blue-bright); outline-offset: 4px; }
+
+
+/* Fix mobile header overflow */
+@media (max-width: 640px) {
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    right: 0;
+  }
+
+  .menu-toggle i,
+  .menu-toggle svg {
+    max-width: 24px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
